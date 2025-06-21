@@ -1,0 +1,25 @@
+.tech{
+    color: green;
+}
+
+
+table{
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td{
+    padding: 10px 0;
+}
+
+
+tr:nth-child(odd){
+    background-color: rgb(213, 213, 213);
+}
+
+tr:hover{
+    background-color: rgb(186, 186, 186);
+}
