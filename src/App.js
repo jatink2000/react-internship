@@ -9,6 +9,7 @@ import { Propsclass } from './components/Propsclass';
 import image from "./images/image1.jpg"
 import { Allstudents } from './components/Allstudents';
 import Hooks from './components/Hooks';
+import Usestate from './components/Usestate';
 
 function App() {
   let details={
@@ -29,6 +30,8 @@ function App() {
         <Link to={"/Propsclass"}> Propsclass component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Allstudents"}> Allstudents component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Hooks"}> Hooks component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Usestate"}> Usestate component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 
         <Routes>
@@ -38,6 +41,8 @@ function App() {
           <Route path='/Propsclass' element={<Propsclass mydetils={details}  />} />
           <Route path='/Allstudents' element={<Allstudents/>} />
           <Route path='/Hooks' element={<Hooks/>} />
+          <Route path='/Usestate' element={<Usestate/>} />
+
 
 
         </Routes>
