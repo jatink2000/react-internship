@@ -10,6 +10,7 @@ import image from "./images/image1.jpg"
 import { Allstudents } from './components/Allstudents';
 import Hooks from './components/Hooks';
 import Usestate from './components/Usestate';
+import Useefferct from './components/Useefferct';
 
 function App() {
   let details={
@@ -31,6 +32,8 @@ function App() {
         <Link to={"/Allstudents"}> Allstudents component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Hooks"}> Hooks component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Usestate"}> Usestate component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Useefferct"}> Useeffect component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 
 
@@ -42,6 +45,8 @@ function App() {
           <Route path='/Allstudents' element={<Allstudents/>} />
           <Route path='/Hooks' element={<Hooks/>} />
           <Route path='/Usestate' element={<Usestate/>} />
+          <Route path='/Useefferct' element={<Useefferct/>} />
+
 
 
 
