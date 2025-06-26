@@ -2,12 +2,17 @@ import React from "react";
 
 import { ourstudents } from "../json/Students";
 import "../css/Allstudents.css"
+import { useLocation } from "react-router-dom";
 
 function Allstudents(){
-    console.log(ourstudents)
+
+    let loc=useLocation()
+    // console.log(loc.state.data.email)
+
     return(
         <>
             <h1 className="tech">Allstudents component</h1>
+            <h1>Hi! {loc.state.data.email}</h1>
 
             <table border={1}>
                 <tr>
@@ -35,14 +40,6 @@ function Allstudents(){
             </table>
 
 
-
-            {/* task :  */}
-            {/* json : 
-            productname
-            image 
-            price 
-            category 
-            des  */}
 
         </>
     )
