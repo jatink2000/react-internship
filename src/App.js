@@ -13,6 +13,7 @@ import Usestate from './components/Usestate';
 import Useefferct from './components/Useefferct';
 import Usenavigate from './components/Usenavigate';
 import Productdetails from './components/Productdetails';
+import Component1 from './components/usecontext/Component1';
 
 function App() {
   let details={
@@ -36,8 +37,7 @@ function App() {
         <Link to={"/Usestate"}> Usestate component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Useefferct"}> Useeffect component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Usenavigate"}> Usenavigate component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
+        <Link to={"/Component1"}> Component1 component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <Routes>
           <Route path='/' element={<Groot myimg={image}/>} />
@@ -50,11 +50,7 @@ function App() {
           <Route path='/Useefferct' element={<Useefferct/>} />
           <Route path='/Usenavigate' element={<Usenavigate/>} />
           <Route path='/Productdetails' element={<Productdetails/>} />
-
-
-
-
-
+          <Route path='/Component1' element={<Component1/>} />
 
         </Routes>
       </BrowserRouter>
