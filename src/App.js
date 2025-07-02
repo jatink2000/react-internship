@@ -15,6 +15,9 @@ import Usenavigate from './components/Usenavigate';
 import Productdetails from './components/Productdetails';
 import Component1 from './components/usecontext/Component1';
 import Signup from './components/Signup';
+import Useparams from './components/Useparams';
+import { Homeclass } from './components/Homeclass';
+import { Servies } from './components/Servies';
 
 function App() {
   let details={
@@ -40,6 +43,9 @@ function App() {
         <Link to={"/Usenavigate"}> Usenavigate component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Component1"}> Component1 component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Signup"}> Signup component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Useparams/jatin kumar/jaipur"}> Useparams component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Homeclass"}> Homeclass component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Servies"}> Servies component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <Routes>
           <Route path='/' element={<Groot myimg={image}/>} />
@@ -54,6 +60,12 @@ function App() {
           <Route path='/Productdetails' element={<Productdetails/>} />
           <Route path='/Component1' element={<Component1/>} />
           <Route path='/Signup' element={<Signup/>} />
+          <Route path='/Useparams/:name/:city' element={<Useparams/>} />
+          <Route path='/Homeclass' element={<Homeclass/>} />
+          <Route path='/Servies' element={<Servies/>} />
+
+
+
 
 
         </Routes>
