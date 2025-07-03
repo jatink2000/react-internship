@@ -18,6 +18,9 @@ import Signup from './components/Signup';
 import Useparams from './components/Useparams';
 import { Homeclass } from './components/Homeclass';
 import { Servies } from './components/Servies';
+import Propsclasscomp from './components/Propsclasscomp';
+import Stateclass from './components/Stateclass';
+import Inputclass from './components/Inputclass';
 
 function App() {
   let details={
@@ -46,6 +49,10 @@ function App() {
         <Link to={"/Useparams/jatin kumar/jaipur"}> Useparams component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Homeclass"}> Homeclass component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={"/Servies"}> Servies component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Propsclasscomp"}> Propsclasscomp component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Stateclass"}> Stateclass component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={"/Inputclass"}> Inputclass component </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
         <Routes>
           <Route path='/' element={<Groot myimg={image}/>} />
@@ -63,6 +70,12 @@ function App() {
           <Route path='/Useparams/:name/:city' element={<Useparams/>} />
           <Route path='/Homeclass' element={<Homeclass/>} />
           <Route path='/Servies' element={<Servies/>} />
+          <Route path='/Propsclasscomp' element={<Propsclasscomp mydetils={details}/>} />
+          <Route path='/Stateclass' element={<Stateclass/>} />
+          <Route path='/Inputclass' element={<Inputclass/>} />
+
+
+
 
 
 
